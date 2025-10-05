@@ -1,0 +1,36 @@
+/* Sección HERO con imagen alineada a la derecha */
+.hero {
+  display: flex;                      /* Alinea texto e imagen en fila */
+  justify-content: space-between;    /* Separa texto a la izquierda e imagen a la derecha */
+  align-items: center;               /* Centra verticalmente */
+  background-color: #0b0d2f;         /* Fondo negro */
+}
+
+/* Contenedor de texto */
+.hero-text {
+  flex: 1;                           /* Ocupa el espacio disponible */
+  padding-left: 3cm;
+  color: #f8f8f8;
+}
+
+/* Imagen visible, más pequeña y completa */
+.hero-img {
+  width: 55%;                      /* Tamaño reducido */
+  height: auto;                    /* Mantiene proporción original */
+  object-fit: cover;               /* Asegura que se vea completa sin recorte */
+}
+
+
+
+
+
+.nav-horizontal {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
