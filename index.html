@@ -9,15 +9,18 @@
 <body>
         <!-- Encabezado -->
     <header>
-        <img src="./assets/img/NomadaOutdoor.png" alt="Logotipo" width="120">
-        <h1>Nomada Outdoor</h1>
-        <nav>
-            <ul class="nav-horizontal">
-                <li>Nosotros</li>
-                <li>Nueva Coleccion</li>
-                <li>Contacto</li>
-            </ul>
-        </nav>
+    <div class="logo-titulo">
+    <img class="logotipo" src="./assets/img/NomadaOutdoor.png" alt="Logotipo" width="120">
+    <h1>Nomada Outdoor</h1>
+    </div>
+    <nav>
+        <ul class="navbar-items">
+        <li class="navbar-item"><a href="#Inicio">Inicio</a></li>
+        <li class="navbar-item"><a href="#Productos">Productos</a></li>
+        <li class="navbar-item"><a href="#Nosotros">Nosotros</a></li>
+        <li class="navbar-item"><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
     </header>
 
     <!-- Sección principal -->
@@ -26,6 +29,9 @@
             <div class="hero-text">
             <h1>Nómada Outdoor</h1>
             <p>El mundo es tu terreno, hazlo tuyo.</p>
+            </div>
+            <div class="min-w-0 flex-1">
+                <input id="email" type="email" placeholder="Ingresa tu correo" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
             </div>
             <img src="./assets/img/hero.png" alt="Paisaje outdoor" class="hero-img">
         </section>
