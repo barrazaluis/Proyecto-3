@@ -1,4 +1,4 @@
-/* Reset y configuración global */
+/* Reset global */
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,18 @@ html {
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Variables de colores y fuentes */
 :root {
-  /* Paleta de Nómada Outdoor */
   --color-black: #0D0D0D;        /* Negro profundo */
   --color-cream: #F5F2EB;        /* Arena claro */
   --color-forest: #2E4E3F;       /* Verde bosque */
@@ -22,6 +32,7 @@ html {
   --font-family: "Arial", sans-serif;
 }
 
+/* Global */
 body {
   font-family: var(--font-family);
   background-color: var(--color-cream);
@@ -35,25 +46,20 @@ body {
   margin-top: 8px;
 }
 
-/* Header */
+/* Navbar */
 .navbar {
-  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1rem 5%;
   background-color: var(--color-black);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
-/* Menú */
 .navbar-items {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
-  list-style: none;
-  margin-top: 1rem;
 }
 
 .navbar-item a {
@@ -67,19 +73,17 @@ body {
   color: var(--color-forest);
 }
 
-/* HERO */
+/* Hero */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-cream);
-  padding: 3rem 5%;
+  padding: 0;
 }
 
-/* Texto del hero */
 .hero-text {
   flex: 1;
-  padding-right: 2rem;
   color: var(--color-black);
 }
 
@@ -95,14 +99,16 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Botones hero */
+/* Botones */
 .btn {
+  display: inline-block;
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -124,13 +130,12 @@ body {
   background-color: #964527;
 }
 
-/* Imagen hero */
+/* Imagen Hero */
 .hero-img {
   flex: 1;
-  width: 55%;
-  height: auto;
-  object-fit: cover;
+  max-width: 55%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 /* Footer */
@@ -152,4 +157,20 @@ footer a {
 
 footer a:hover {
   color: var(--color-forest);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
 }

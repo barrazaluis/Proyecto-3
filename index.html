@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 </head>
 <body>
         <!-- Encabezado -->
@@ -30,28 +32,35 @@
             <h1>Nómada Outdoor</h1>
             <p>El mundo es tu terreno, hazlo tuyo.</p>
             </div>
-            <div class="min-w-0 flex-1">
-                <input id="email" type="email" placeholder="Ingresa tu correo" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-            </div>
+            <form class="d-flex gap-2">
+            <input
+                type="email"
+                class="form-control form-control-lg border-0 rounded-3 shadow-sm"
+                id="email"
+                placeholder="Ingresa tu correo"
+                required
+            >
+            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </form>
             <img src="./assets/img/hero.png" alt="Paisaje outdoor" class="hero-img">
         </section>
         <section class="productos">
             <h2>Nuestra Colección</h2>
-            <div class="product-list">
-                <div class="product-item">
+            <div class="Caracteristicas">
+                <div class="Vestuario">
                     <img src="./assets/img/product1.png" alt="Producto 1">
-                    <h3>Chaqueta Impermeable</h3>
-                    <p>Perfecta para cualquisssser aventura bajo la lluvia.</p>
+                    <h3>Vestuario</h3>
+                    <p>Perfecto para cualquier aventura bajo la lluvia.</p>
                 </div>
-                <div class="product-item">
+                <div class="Accesorios">
                     <img src="./assets/img/product2.png" alt="Producto 2">
-                    <h3>Mochila de Senderismo</h3>
-                    <p>Ligera y resistente, ideal para largas caminatas.</p>
+                    <h3>Accesorios</h3>
+                    <p>Complementos ideales para tus aventuras al aire libre.</p>
                 </div>
-                <div class="product-item">
+                <div class="calzado">
                     <img src="./assets/img/product3.png" alt="Producto 3">
                     <h3>Botas de Montaña</h3>
-                    <p>Comodidad y durabilidad en terrenos difíciles.</p>
+                    <p>Diseñadas para ofrecer soporte y tracción en terrenos difíciles.</p>
                 </div>
             </div>
 
