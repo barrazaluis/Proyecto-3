@@ -90,6 +90,7 @@ body {
 .hero-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  margin-left: 2.5rem;
   font-weight: 700;
 }
 
@@ -195,9 +196,15 @@ footer a {
   transition: color 0.3s;
 }
 
-footer a:hover {
-  color: var(--color-forest);
+.lema {
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  font-size: 1.5rem; /* Equivale a 24px si el root es 16px */
+  color: var(--color-gray);
 }
+
+
 
 /* Responsivo */
 @media (max-width: 900px) {
