@@ -138,6 +138,46 @@ body {
   object-fit: cover;
 }
 
+h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.Caracteristicas {
+  display: flex;
+  justify-content: center; /* o center / start / end según tu diseño */
+  gap: 0rem; /* espacio entre los bloques */
+  flex-wrap: wrap; /* permite que se acomoden en varias líneas si el ancho es limitado */
+  padding: 2rem 0;
+}
+
+.vestuario {
+  text-align: center;
+  padding: 1rem;
+  max-width: 20%;
+}
+
+
+.calzado {
+  text-align: center;
+  padding: 1rem;
+  max-width: 20%;
+
+}
+
+.calzado {
+  text-align: center;
+  padding: 1rem;
+  max-width: 20%;
+
+}
+
+.Accesorios {
+  text-align: center;
+  padding: 1rem;
+  max-width: 20%;
+}
+
 /* Footer */
 footer {
   background-color: var(--color-black);
