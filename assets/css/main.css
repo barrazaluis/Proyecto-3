@@ -1,6 +1,4 @@
-/* -------------------------------------------------------------------------- */
-/* Variables de colores y fuentes (Paleta renovada Nómada Outdoor) */
-/* -------------------------------------------------------------------------- */
+
 :root {
     --color-black: #1A1A1A;        /* Negro carbón (fondo navbar, footer, títulos fuertes) */ 
     --color-cream: #F2EFE7;        /* Arena clara cálida (fondo principal) */
@@ -101,6 +99,7 @@ body {
     align-items: center;
     background-color: var(--color-cream); 
 }
+
 
 .hero-content {
     flex: 1; 
