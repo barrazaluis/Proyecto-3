@@ -31,6 +31,16 @@ La landing page está compuesta por las siguientes secciones:
 
 ---
 
+## 🌐 Publicación
+
+El sitio se encuentra publicado bajo la siguiente URL:
+
+🔗 [https://barrazaluis.github.io/Proyecto-3/](https://barrazaluis.github.io/Proyecto-3/)
+
+Pueden acceder directamente para visualizar la landing page en funcionamiento, probar su responsividad y explorar la propuesta visual de Nómada Outdoor.
+
+
+
 ## 📱 Responsive Design
 
 El sitio fue probado y optimizado para dispositivos móviles mediante **media queries**. Se ajustan tamaños de fuente, distribución de columnas, espaciado y comportamiento de botones para mejorar la experiencia en pantallas pequeñas.
