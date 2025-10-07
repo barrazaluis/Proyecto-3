@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,68 +9,70 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-        <!-- Encabezado -->
-    <header>
-    <div class="logo-titulo">
-    <img class="logotipo" src="./assets/img/NomadaOutdoor.png" alt="Logotipo" width="120">
-    <h1>Nomada Outdoor</h1>
-    </div>
-    <nav>
-        <ul class="navbar-items">
-        <li class="navbar-item"><a href="#Inicio">Inicio</a></li>
-        <li class="navbar-item"><a href="#Productos">Productos</a></li>
-        <li class="navbar-item"><a href="#Nosotros">Nosotros</a></li>
-        <li class="navbar-item"><a href="#Contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <header class="main-header">
+        <a href="#Inicio" class="logo">
+            <img src="./assets/img/NomadaOutdoor.png" alt="Logotipo Nómada Outdoor" width="100">
+        </a>
+        
+        <nav class="main-nav">
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="#Inicio">Inicio</a></li>
+                <li class="navbar-item"><a href="#Productos">Productos</a></li>
+                <li class="navbar-item"><a href="#Nosotros">Nosotros</a></li>
+                <li class="navbar-item"><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Sección principal -->
     <main>
-        <section class="hero">
-            <div class="hero-text">
-            <h1>Nómada Outdoor</h1>
-            <p class="lema">El mundo es tu terreno, hazlo tuyo.</p>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Comunica tu espíritu aventurero</h1>
+                <p class="hero-subtitle">Descubre nuestra colección de ropa outdoor diseñada para exploradores apasionados.</p>
+                <div class="hero-actions">
+                <a href="#Productos" class="btn btn-secondary">Ver productos</a>
+                
+                <form class="newsletter-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Suscribite al Newsletter" required>
+                    <button type="submit" class="btn btn-newsletter">Suscribirse</button>
+                </form>
+                </div>
             </div>
-            <form class="d-flex gap-2">
-            <input
-                type="email"
-                class="form-control form-control-lg border-0 rounded-3 shadow-sm"
-                id="email"
-                placeholder="Ingresa tu correo"
-                required
-            >
-            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-            </form>
-            <img src="./assets/img/hero.png" alt="Paisaje outdoor" class="hero-img">
+            
+            <div class="hero-image-container">
+                <img src="./assets/img/hero.png" alt="Pareja caminando" class="hero-img">
+            </div>
         </section>
-        <section class="productos">
-            <h2>Nuestra Colección</h2>
-            <div class="Caracteristicas">
-                <div class="vestuario">
-                    <img src="./assets/img/vestuario.png" alt="Producto 1">
-                    <h3>Vestuario</h3>
-                    <p>Perfecto para cualquier aventura bajo la lluvia.</p>
+
+        <section class="productos-section">
+            <h2 class="productos-title">Productos</h2>
+            <div class="productos-grid">
+                <div class="product-card">
+                    <img src="./assets/img/vestuario.png" alt="vestuario">
+                    <h3 class="product-name">Vestuario</h3>
+                    <p class="product-price">Perfecto para cualquier aventura bajo la lluvia.</p>
                 </div>
-                <div class="Accesorios">
-                    <img src="./assets/img/accesorios.png" alt="Producto 2">
-                    <h3>Accesorios</h3>
-                    <p>Complementos ideales para tus aventuras al aire libre.</p>
+                
+                <div class="product-card">
+                    <img src="./assets/img/accesorios.png" alt="accesorios">
+                    <h3 class="product-name">Accesorios</h3>
+                    <p class="product-price">Complementa tu outfit con nuestros accesorios.</p>
                 </div>
-                <div class="calzado">
-                    <img src="./assets/img/calzado.png" alt="Producto 3">
-                    <h3>Botas de Montaña</h3>
-                    <p>Diseñadas para ofrecer soporte y tracción en terrenos difíciles.</p>
+
+                <div class="product-card">
+                    <img src="./assets/img/calzado.png" alt="calzado">
+                    <h3 class="product-name">Calzado</h3>
+                    <p class="product-price">Perfecto para cualquier aventura al aire libre.</p>
                 </div>
             </div>
-
         </section>
     </main>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>© 2025 Nomada Outdoor. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:contacto@nomadaoutdoor.com">contacto@nomadaoutdoor.com</a></p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>NÓMADA OUTDOOR</p>
+            <p>© 2025 Nómada Outdoor. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
