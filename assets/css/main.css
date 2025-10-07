@@ -172,11 +172,17 @@ body {
 
 .productos-title {
     font-size: 2rem;
-    text-align: left;
-    margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
     color: var(--color-black);
 }
 
+.productos-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-gray-text);
+}
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -210,9 +216,9 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.product-price {
+.producto-texto {
     font-weight: bold;
-    color: var(--color-terra);
+    color: black;
     margin-top: 0.5rem;
 }
 
