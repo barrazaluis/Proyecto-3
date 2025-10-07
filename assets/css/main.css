@@ -9,6 +9,8 @@
     --color-gray-text: #5A5A5A;    /* Gris piedra (texto secundario, descripciones) */
     --color-light-border: #E0E0E0; /* Borde sutil */
     --color-highlight: #A1B57D;    /* Verde oliva claro (detalles, hover sutil) */
+    --color-hero-bg: #F0ECE4;     /* Beige suave para destacar el Hero */
+
 
     --font-family: 'Poppins', sans-serif; 
     --padding-sides: 5%; 
@@ -63,7 +65,7 @@ body {
 .hero-section {
     display: flex;
     align-items: center;
-    background-color: var(--color-cream); 
+    background-color: var(--color-hero-bg); 
 }
 
 .hero-content {
