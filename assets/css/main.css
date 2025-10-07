@@ -338,4 +338,9 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
+    .main-footer a:hover {
+  color: var(--color-terra);
+}
+
+
 }
